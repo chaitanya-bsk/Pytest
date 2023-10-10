@@ -17,7 +17,7 @@ run tests with specific markers as follows ->  pytest -m smoke
 Run all the tests -> pytest 
 
 
-# Folder Structure- 
+# Folder Structure - 
 This contains the structure of the framework. 
 Services here are - ex- call / user/ name / contact / each set of API collections. This helps in easy segregation 
 - assertionhelpers are used to assert respective services
