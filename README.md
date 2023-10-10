@@ -20,12 +20,13 @@ Run all the tests -> pytest
 # Folder Structure- 
 This contains the structure of the framework. 
 Services here are - ex- call / user/ name / contact / each set of API collections. This helps in easy segregation 
-assertionhelpers are used to assert respective services
-datahelper - helps in fetching data 
-clients - will call the API request
-executor - it will call the respective service API 
-templates - this will contain schema , some test data
-tests - will have test scenarios for each service - ex: all contact related test cases can be written in contact.py. Any common test cases can be written in base.py
+- assertionhelpers are used to assert respective services
+- datahelper - helps in fetching data 
+- clients - will call the API request
+- executor - it will call the respective service API 
+- templates - this will contain schema , some test data
+- tests - will have test scenarios for each service - ex: all contact related test cases can be written in contact.py. Any common test cases can be written in base.py
+
 - Pytest/
   - assertionhelpers/
     - base.py
