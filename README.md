@@ -18,21 +18,33 @@ Run all the tests -> pytest
 
 
 # Folder Structure- 
-Pytest/ 
-├── assertionhelpers/ # Test data 
-			├──base 
-			├──contact
-├── clients/ # Test scripts 
-			├──base	
-├── configs/ # Cypress plugins 
-├── constants/ # fetching the constant data 
-├── datahelper/ # helps in fetching the data 
-├── executors/ # execute the api by sending it to respective service 
-├── services/ # Cypress plugins 
-		├──base
-		├──contact	
-├── templates/ # JSON FILES  
-├── tests/ # tests  
+This contains the structure of the framework. 
+Services here are - ex- call / user/ name / contact / each set of API collections. This helps in easy segregation 
+assertionhelpers are used to assert respective services
+datahelper - helps in fetching data 
+clients - will call the API request
+executor - it will call the respective service API 
+templates - this will contain schema , some test data
+tests - will have test scenarios for each service - ex: all contact related test cases can be written in contact.py. Any common test cases can be written in base.py
+- Pytest/
+  - assertionhelpers/
+    - base.py
+    - contact.py/
+  - clients/
+    - base.py
+  - configs/
+  - constants/
+  - datahelper
+  - executors/
+  - services/
+    - base.py
+    - contact.py/
+  - templates
+  - tests
+    - base.py
+    - contact.py/
+     	- contactsearch_test
+
 
 
 # Report generation - 
