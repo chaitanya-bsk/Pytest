@@ -13,8 +13,8 @@ We have stored API KEY and API ID in this path and later fetched in out tests
 
 
 # How to execute test-
-pytest -s
-pytest -m smoke
+run tests with specific markers as follows ->  pytest -m smoke
+Run all the tests -> pytest 
 
 
 # Folder Structure- 
